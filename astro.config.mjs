@@ -5,12 +5,14 @@ import sanity from "@sanity/astro";
 import react from "@astrojs/react";
 import node from "@astrojs/node";
 
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
   adapter: node({ mode: "standalone" }),
   integrations: [
     sanity({
-      projectId: "",
-      dataset: "",
+      projectId: "aifjm54f",
+      dataset: "production",
       useCdn: false, // See note on using the CDN
       apiVersion: "2025-01-28", // insert the current date to access the latest version of the API
       studioBasePath: "/studio",
@@ -31,5 +33,7 @@ export default defineConfig({
         "lodash/sortedIndex.js",
       ],
     },
+
+    plugins: [tailwindcss()],
   },
 });

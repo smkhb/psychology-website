@@ -1,0 +1,12 @@
+---
+interface Props {
+  variant: 'hero' | 'section';
+}
+const { variant } = Astro.props;
+---
+
+{variant === 'hero' && (
+  <h1 class="font-serif text-5xl md:text-6xl font-normal leading-tight text-brand-brown">
+    <slot />
+  </h1>
+)}

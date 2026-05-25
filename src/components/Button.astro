@@ -1,0 +1,32 @@
+---
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'ghost' | 'transparent';
+  class?: string;
+}
+
+const { href, variant = 'primary', class: className, ...rest } = Astro.props;
+
+const baseStyles = "btn rounded-lg font-montserrat";
+
+const variantStyles = {
+  primary: "bg-brand-brown border-brand-brown text-gray-100 hover:bg-brand-brown-hover hover:border-brand-brown-hover",
+  secondary: "bg-brand-terracota border-brand-terracota text-gray-100 hover:bg-brand-terracota-hover hover:border-brand-terracota-hover",
+  tertiary: "bg-brand-green border-brand-green text-gray-100 hover:bg-brand-green-hover hover:border-brand-green-hover",
+  ghost: "bg-transparent border-brand-brown border-2 text-brand-brown hover:bg-brand-brown hover:text-gray-100",
+  transparent: "bg-transparent border-transparent shadow-none text-gray-900 hover:text-gray-600",
+}[variant];
+
+---
+
+{
+  href ? (
+    <a href={href} class={`${baseStyles} ${variantStyles} ${className || ''}`} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button class={`${baseStyles} ${variantStyles} ${className || ''}`} {...rest}>
+      <slot />
+    </button>
+  )
+}
