@@ -1,7 +1,23 @@
 ---
-import Button from '../components/Button.astro';
+import Accordion from "../components/Accordion.astro";
+import Button from "../components/Button.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+  <section class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[70vh]">
+    <div class="space-y-6">
+      <h1>O equilíbrio e a saúde emocional começam por uma <span class="italic text-brand-terracota">escuta singular</span>.</h1>
+      <p class="max-w-xl">
+        Ofereço um espaço seguro e acolhedor para que você possa compreender suas emoções, tratar dores profundas e resgatar sua autonomia.
+      </p>
+      <div class="flex gap-4">
+        <Button variant="primary">Agendar Consulta</Button>
+        <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
+      </div>
+    </div>
+    <div class="bg-neutral-200 aspect-[4/3] rounded-[8px] overflow-hidden shadow-sm">
+      <div class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400">Placeholder Foto</div>
+    </div>
+  </section>
 </Layout>

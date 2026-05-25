@@ -27,6 +27,10 @@
   --color-text-main: #1f2937;
 
   --animate-fade-in: fade-in 0.5s ease-out--smoth;
+
+  --color-primary: var(--color-brand-terracota);
+  --color-neutral: var(--color-brand-brown);
+  --color-base-100: var(--color-bg-warm);
 }
 
 @layer base {
