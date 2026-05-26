@@ -39,7 +39,7 @@
   }
 
   body {
-    @apply bg-bg-warm font-sans text-text-main overflow-x-hidden h-full w-full;
+    @apply font-sans text-text-main overflow-x-hidden h-full w-full;
   }
   h1 {
     /* Mobile: 40px (2.5rem) -> Desktop: 64px (4rem) */
@@ -56,13 +56,13 @@
   h3 {
     /* Mobile: 24px (1.5rem) -> Desktop: 32px (2rem) */
     font-size: clamp(1.5rem, 3vw + 0.75rem, 2rem);
-    @apply font-libre font-semibold text-brand-terracota;
+    @apply font-libre text-2xl md:text-3xl font-semibold text-brand-terracota;
   }
 
   h4 {
     /* Mobile: 20px (1.25rem) -> Desktop: 24px (1.5rem) */
     font-size: clamp(1.25rem, 2vw + 0.75rem, 1.5rem);
-    @apply font-libre font-medium text-text-main leading-normal;
+    @apply font-libre text-xl md:text-2xl font-medium text-text-main leading-normal;
   }
 
   p,

@@ -1,23 +1,65 @@
 ---
-import Accordion from "../components/Accordion.astro";
 import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[70vh]">
-    <div class="space-y-6">
-      <h1>O equilíbrio e a saúde emocional começam por uma <span class="italic text-brand-terracota">escuta singular</span>.</h1>
-      <p class="max-w-xl">
-        Ofereço um espaço seguro e acolhedor para que você possa compreender suas emoções, tratar dores profundas e resgatar sua autonomia.
-      </p>
-      <div class="flex gap-4">
+  <section
+    class="bg-bg-warm py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[70vh]"
+  >
+    <div class="space-y-6 text-center md:text-left">
+      <h1>
+        <span class="font-bold text-brand-terracota"
+          >Equilíbrio e a saúde emocional</span
+        > começam por uma escuta singular.
+      </h1>
+      <h2 class="max-w-xl">Você não precisa caminhar sozinho.</h2>
+      <div class="flex gap-4 justify-center md:justify-start">
         <Button variant="primary">Agendar Consulta</Button>
         <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
       </div>
     </div>
-    <div class="bg-neutral-200 aspect-[4/3] rounded-[8px] overflow-hidden shadow-sm">
-      <div class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400">Placeholder Foto</div>
+    <div class="bg-neutral-200 aspect-4/3 rounded-lg overflow-hidden shadow-sm">
+      <div
+        class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+      >
+        Placeholder Foto
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-brand-gray py-10 grid grid-cols-1 gap-2 min-h-[30vh] items-center justify-items-center"
+  >
+    <h3>Como eu abordo a psicoterapia.</h3>
+    <p class="max-w-2xl text-center">
+      Acredito que a psicoterapia é um espaço de acolhimento, onde cada
+      indivíduo é convidado a explorar suas emoções, pensamentos e experiências
+      de forma segura e sem julgamentos. Meu objetivo é criar um ambiente onde
+      você se sinta confortável para compartilhar suas preocupações e desafios,
+      permitindo que juntos possamos trabalhar em direção ao seu bem-estar
+      emocional e crescimento pessoal.
+    </p>
+  </section>
+
+  <section
+    class="bg-bg-warm py-10 grid grid-cols-1 gap-2 min-h-[30vh] items-center justify-items-center"
+  >
+    <h3>Fundamentos</h3>
+    <p class="max-w-2xl text-center">
+      O cuidado psicológico exige responsabilidade, ética e respeito pela
+      experiência de vida de cada pessoa.
+    </p>
+    <div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-sm max-w-md mx-auto">
+        <h4>Escuta responsável</h4>
+        <p>
+          Presença atenta que respeita seu mundo emocional e sua experiência
+          únicos.
+        </p>
+        <Link href="/sobre">Saiba mais</Link>
+      </div>
     </div>
   </section>
 </Layout>
