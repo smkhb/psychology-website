@@ -51,14 +51,35 @@ import Layout from "../layouts/Layout.astro";
       O cuidado psicológico exige responsabilidade, ética e respeito pela
       experiência de vida de cada pessoa.
     </p>
-    <div>
-      <div class="bg-gray-100 p-6 rounded-lg shadow-sm max-w-md mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between "
+      >
         <h4>Escuta responsável</h4>
         <p>
           Presença atenta que respeita seu mundo emocional e sua experiência
           únicos.
         </p>
-        <Link href="/sobre">Saiba mais</Link>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      </div>
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
+      >
+        <h4>Confidencialidade profissional</h4>
+        <p>
+          Sua história permanece protegida dentro dos limites da prática ética.
+        </p>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      </div>
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
+      >
+        <h4>Respeito pela singularidade</h4>
+        <p>
+          Não existem duas jornadas iguais. Seu processo se desenrola em seu
+          próprio ritmo.
+        </p>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
       </div>
     </div>
   </section>

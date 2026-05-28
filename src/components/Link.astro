@@ -1,12 +1,29 @@
 ---
 interface Props {
   href: string;
+  variant?: "primary" | "secondary";
+  class?: string;
 }
 
-const { href } = Astro.props;
+const { href, variant = "primary", class: className, ...rest } = Astro.props;
+
+const baseStyles = "link font-montserrat font-medium";
+
+const variantStyles = {
+  primary: "hover:text-brand-brown focus:bg-transparent",
+  secondary:
+    "italic text-brand-green hover:text-brand-green-hover focus:bg-transparent",
+}[variant];
 ---
+
 {
-  <a href={href} class="link font-montserrat font-medium hover:text-brand-brown focus:bg-transparent">
-  <slot/>
-  </a>
+  (
+    <a
+      href={href}
+      class={`${baseStyles} ${variantStyles} ${className || ""}`}
+      {...rest}
+    >
+      <slot />
+    </a>
+  )
 }
