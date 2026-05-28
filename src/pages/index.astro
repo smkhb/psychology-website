@@ -6,7 +6,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <section
-    class="bg-bg-warm py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[70vh]"
+    class="bg-bg-warm py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
   >
     <div class="space-y-6 text-center md:text-left">
       <h1>
@@ -30,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <section
-    class="bg-brand-gray py-10 grid grid-cols-1 gap-2 min-h-[30vh] items-center justify-items-center"
+    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
   >
     <h3>Como eu abordo a psicoterapia.</h3>
     <p class="max-w-2xl text-center">
@@ -44,7 +44,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <section
-    class="bg-bg-warm py-10 grid grid-cols-1 gap-2 min-h-[60vh] items-center justify-items-center"
+    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
   >
     <h3>Fundamentos</h3>
     <p class="max-w-2xl text-center">
@@ -84,9 +84,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section
-    class="bg-brand-gray py-10 grid grid-cols-1 md:grid-cols-2 gap-12 min-h-[60vh]"
-  >
+  <section class="bg-brand-gray py-10 grid grid-cols-1 md:grid-cols-2 gap-12">
     <div
       class="bg-neutral-200 w-sm rounded-lg overflow-hidden shadow-sm justify-self-end"
     >
@@ -96,7 +94,7 @@ import Layout from "../layouts/Layout.astro";
         Placeholder Foto
       </div>
     </div>
-    <div>
+    <div class="space-y-2">
       <h3>Serviços clínicos</h3>
       <p class="max-w-2xl">
         Cada serviço é personalizado para atender às suas necessidades
@@ -116,6 +114,135 @@ import Layout from "../layouts/Layout.astro";
           <li>Terapia Familiar</li>
           <li>Serviços de Emergência</li>
         </ul>
+      </div>
+      <Button variant="secondary">Agendar Consulta</Button>
+    </div>
+  </section>
+
+  <section
+    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Para quem é direcionado?</h3>
+    <p class="max-w-2xl text-center">
+      É recomendado que todos procurem aconselhamento no decorrer da vida mas é
+      especialmente recomendado se você encontrar em um desses momentos da vida.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+      >
+        <h4>Desejo compreender as emoções e os relacionamentos.</h4>
+        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+          <div
+            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+          >
+            Placeholder Foto
+          </div>
+        </div>
+        <p>Buscando clareza sobre o que se move dentro de você.</p>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      </div>
+
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+      >
+        <h4>Vivencia conflitos internos ou relacionais</h4>
+        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+          <div
+            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+          >
+            Placeholder Foto
+          </div>
+        </div>
+        <p>Enfrentando tensões que exigem atenção e cuidado.</p>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      </div>
+
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+      >
+        <h4>Em fases de transição ou crise da vida</h4>
+        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+          <div
+            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+          >
+            Placeholder Foto
+          </div>
+        </div>
+        <p>Precisar de apoio quando o chão cede sob seus pés.</p>
+        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Dê o primeiro passo</h3>
+    <p class="max-w-2xl text-center">
+      Buscar aconselhamento é um ato de responsabilidade para consigo mesmo e
+      para com aqueles que caminham ao seu lado.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <Button variant="primary">Agendar Consulta</Button>
+      <Button variant="secondary">Contato</Button>
+    </div>
+  </section>
+
+  <section
+    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Além do cuidado individual</h3>
+    <p class="max-w-2xl text-center">
+      Estendemos nosso trabalho a organizações e grupos que buscam uma conexão
+      mais profunda.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between gap-2"
+      >
+        <p class="font-montserrat font-bold text-brand-terracota text-sm">
+          Organizacionais
+        </p>
+        <h4>Palestras institucionais para a conscientização emocional</h4>
+        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+          <div
+            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+          >
+            Placeholder Foto
+          </div>
+        </div>
+        <p>
+          Fortaleça os relacionamentos e a comunicação no seu ambiente de
+          trabalho.
+        </p>
+        <div class="flex gap-4 justify-center items-center">
+          <Button variant="primary">Solicitar</Button>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+      </div>
+      <div
+        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between gap-2"
+      >
+        <p class="font-montserrat font-bold text-brand-terracota text-sm">
+          Organizacionais
+        </p>
+        <h4>Palestras institucionais para a conscientização emocional</h4>
+        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+          <div
+            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+          >
+            Placeholder Foto
+          </div>
+        </div>
+        <p>
+          Fortaleça os relacionamentos e a comunicação no seu ambiente de
+          trabalho.
+        </p>
+        <div class="flex gap-4 justify-center items-center">
+          <Button variant="primary">Solicitar</Button>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
       </div>
     </div>
   </section>
