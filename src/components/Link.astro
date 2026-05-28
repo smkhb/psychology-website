@@ -10,7 +10,7 @@ const { href, variant = "primary", class: className, ...rest } = Astro.props;
 const baseStyles = "link font-montserrat font-medium";
 
 const variantStyles = {
-  primary: "hover:text-brand-brown focus:bg-transparent",
+  primary: "hover:bg-transparent hover:text-brand-brown focus:bg-transparent focus:text-brand-brown",
   secondary:
     "italic text-brand-green hover:text-brand-green-hover focus:bg-transparent",
 }[variant];

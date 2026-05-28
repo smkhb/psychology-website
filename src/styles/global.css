@@ -4,9 +4,9 @@
 @plugin "daisyui";
 
 @theme {
-  --font-playfair: "Playfair Display", serif;
-  --font-libre: "Libre Baskerville", serif;
-  --font-montserrat: "Montserrat", system-ui, sans-serif;
+  --font-playfair: "Playfair Display", serif;  /* h1, h2 */
+  --font-libre: "Libre Baskerville", serif;  /* h3, h4, p, .body-text */
+  --font-montserrat: "Montserrat", system-ui, sans-serif; /* buttons, links */
 
   --color-bg-warm: #f4eeec;
 
@@ -71,5 +71,10 @@
     /* Nota: Texto de leitura precisa de limites estritos para não virar poeira no mobile ou gigante no desktop */
     font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
     @apply font-libre text-base md:text-lg text-neutral-700 leading-relaxed;
+  }
+  li {
+    /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
+    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
+    @apply font-libre text-base md:text-lg text-neutral-700 leading-relaxed list-disc list-inside;
   }
 }
