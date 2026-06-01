@@ -12,7 +12,7 @@ import Layout from "../layouts/Layout.astro";
   >
     <div class="space-y-6 text-center md:text-left">
       <h1>
-        <span class="font-bold text-brand-terracota"
+        <span class="font-bold"
           >Equilíbrio e a saúde emocional</span
         > começam por uma escuta singular.
       </h1>
@@ -270,7 +270,7 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <div class="grid grid-cols-1 gap-2">
       <Accordion>
-        <h4 slot="question">Quanto tempo dura uma sessão de terapia?</h3>
+        <h4 slot="question">Quanto tempo dura uma sessão de terapia?</h4>
         <p slot="answer">
           Uma sessão típica de terapia dura cerca de 50 minutos a 1 hora. No
           entanto, a duração pode variar dependendo das necessidades individuais
@@ -321,6 +321,13 @@ import Layout from "../layouts/Layout.astro";
           melhor como trabalhamos antes de agendar uma consulta.
         </p>
       </Accordion>
+    </div>
+    <h3>Ainda tem dúvidas?</h3>
+    <p class="max-w-2xl text-center">
+      Estamos aqui para ouvir e esclarecer qualquer dúvida que você tenha.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <Button variant="primary">Contato</Button>
     </div>
   </section>
 </Layout>
