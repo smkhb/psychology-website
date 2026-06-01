@@ -1,5 +1,6 @@
 ---
 import Button from "../components/Button.astro";
+import EmailInput from "../components/EmailInput.astro";
 import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -245,5 +246,17 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </div>
+  </section>
+
+  <section
+    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Um espaço para o seu autoconhecimento</h3>
+    <p class="max-w-2xl text-center">
+      Inscreva-se para receber reflexões mensais sobre saúde emocional,
+      autoconhecimento e o cuidado com a mente, enviadas com a mesma ética e
+      respeito do consultório.
+    </p>
+    <EmailInput/>
   </section>
 </Layout>
