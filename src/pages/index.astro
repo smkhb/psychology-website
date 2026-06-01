@@ -1,4 +1,5 @@
 ---
+import Accordion from "../components/Accordion.astro";
 import Button from "../components/Button.astro";
 import EmailInput from "../components/EmailInput.astro";
 import Link from "../components/Link.astro";
@@ -257,6 +258,69 @@ import Layout from "../layouts/Layout.astro";
       autoconhecimento e o cuidado com a mente, enviadas com a mesma ética e
       respeito do consultório.
     </p>
-    <EmailInput/>
+    <EmailInput />
+  </section>
+
+  <section
+    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Perguntas Frequentes</h3>
+    <p class="max-w-2xl text-center">
+      Perguntas frequentes sobre a terapia, o processo e o que esperar.
+    </p>
+    <div class="grid grid-cols-1 gap-2">
+      <Accordion>
+        <h4 slot="question">Quanto tempo dura uma sessão de terapia?</h3>
+        <p slot="answer">
+          Uma sessão típica de terapia dura cerca de 50 minutos a 1 hora. No
+          entanto, a duração pode variar dependendo das necessidades individuais
+          e do tipo de terapia.
+        </p>
+      </Accordion>
+      <Accordion>
+        <h4 slot="question">Como começa a terapia?</h4>
+        <p slot="answer">
+          O primeiro encontro é para ouvir e entender o que te trouxe aqui. Não
+          há julgamentos, apenas espaço para a sua história. Conversamos sobre
+          as suas necessidades e se o nosso trabalho em conjunto parece adequado
+          para você.
+        </p>
+      </Accordion>
+      <Accordion>
+        <h4 slot="question">Tudo o que eu compartilho é confidencial?</h4>
+        <p slot="answer">
+          Sim. O sigilo profissional é um pilar da prática ética. Sua história
+          permanece protegida dentro dos limites legais e éticos, com raras
+          exceções apenas quando a segurança estiver em risco.
+        </p>
+      </Accordion>
+      <Accordion>
+        <h4 slot="question">Qual é a duração média da terapia?</h4>
+        <p slot="answer">
+          Não existe um prazo fixo. Algumas pessoas se beneficiam de um trabalho
+          breve focado em questões específicas, enquanto outras se envolvem em
+          processos mais longos. A duração se define de acordo com suas
+          necessidades e ritmo.
+        </p>
+      </Accordion>
+      <Accordion>
+        <h4 slot="question">E se eu ainda não me sentir pronto?</h4>
+        <p slot="answer">
+          Estar preparado faz parte do próprio processo. O simples ato de entrar
+          em contato já é um passo importante. Podemos explorar suas hesitações
+          juntos, sem pressão ou expectativas.
+        </p>
+      </Accordion>
+      <Accordion>
+        <h4 slot="question">
+          Posso entrar em contato com você antes de agendar?
+        </h4>
+        <p slot="answer">
+          Com certeza. Você pode entrar em contato pelo WhatsApp ou e-mail para
+          tirar dúvidas, compartilhar preocupações ou simplesmente entender
+          melhor como trabalhamos antes de agendar uma consulta.
+        </p>
+      </Accordion>
+    </div>
   </section>
 </Layout>
