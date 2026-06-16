@@ -4,11 +4,13 @@ import Button from "../components/Button.astro";
 import EmailInput from "../components/EmailInput.astro";
 import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import BackgroundPhoto from "../assets/BackgroundPhoto.jpg";
 ---
 
 <Layout>
   <section
-    class="bg-bg-warm py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    class="bg-mesh-gradient py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
   >
     <div class="space-y-6 text-center md:text-left">
       <h1>
@@ -329,6 +331,32 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <div class="flex gap-4 justify-center">
       <Button variant="primary">Contato</Button>
+    </div>
+  </section>
+
+  <section
+    class="md:p-0 relative h-screen md:h-dvh w-full flex items-center justify-center overflow-hidden"
+  >
+    <Image
+      src={BackgroundPhoto}
+      alt="Fundo acolhedor do consultório"
+      class="absolute inset-0 w-full h-full object-cover -z-10 brightness-95"
+      widths={[240, 540, 720, 1180, 1920]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 1180px, 1920px`}
+    />
+  </section>
+
+  <section
+    class="bg-mesh-gradient py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
+  >
+    <h3>Que tal iniciar a sua jornada de cuidado?</h3>
+    <p class="max-w-2xl text-center">
+      O processo terapêutico é um investimento em você. Agende uma conversa
+      inicial para entendermos, juntos, como a psicoterapia pode auxiliar no seu
+      momento atual.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <Button variant="primary">Agendar Consulta</Button>
     </div>
   </section>
 </Layout>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -10,18 +10,18 @@
 
   --color-bg-warm: #f4eeec;
 
-  --color-brand-gray: #FCFCFA;
+  --color-brand-gray: #fcfcfa;
 
   --color-brand-brown: #734f30;
   --color-brand-brown-hover: #593619;
-  --color-brand-brown-clicked: #3F220A;
-  
-  --color-brand-terracota: #BF702A;
-  --color-brand-terracota-hover: #994E0A;
+  --color-brand-brown-clicked: #3f220a;
+
+  --color-brand-terracota: #bf702a;
+  --color-brand-terracota-hover: #994e0a;
   --color-brand-terracota-clicked: #723600;
-  
-  --color-brand-green: #3A8C15;
-  --color-brand-green-hover: #20722D;
+
+  --color-brand-green: #3a8c15;
+  --color-brand-green-hover: #20722d;
   --color-brand-green-clicked: #255946;
 
   --color-text-main: #1f2937;
@@ -75,11 +75,20 @@
     /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
     /* Nota: Texto de leitura precisa de limites estritos para não virar poeira no mobile ou gigante no desktop */
     font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
-    @apply font-libre text-neutral-700 ;
+    @apply font-libre text-neutral-700;
   }
   li {
     /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
     font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
     @apply font-libre text-neutral-700 list-disc list-inside;
   }
+}
+
+@utility bg-mesh-gradient {
+  background-color: hsla(300, 0%, 94%, 1);
+  background-image:
+    radial-gradient(at 0% 100%, hsla(12, 100%, 68%, 0.4) 0px, transparent 50%),
+    radial-gradient(at 97% 100%, hsla(26, 100%, 67%, 0.4) 0px, transparent 50%),
+    radial-gradient(at 99% 1%, hsla(12, 100%, 68%, 0.4) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(26, 100%, 67%, 0.4) 0px, transparent 50%);
 }
