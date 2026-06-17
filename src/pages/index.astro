@@ -5,49 +5,51 @@ import EmailInput from "../components/EmailInput.astro";
 import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import BackgroundPhoto from "../assets/BackgroundPhoto.jpg";
+import Background from "../assets/background.jpg";
+import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
 ---
 
 <Layout>
-  <section
-    class="bg-mesh-gradient py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-  >
-    <div class="space-y-6 text-center md:text-left">
-      <h1>
-        <span class="font-bold">Equilíbrio e a saúde emocional</span> começam por
-        uma escuta singular.
-      </h1>
-      <h3 class="max-w-xl text-brand-brown font-normal">
-        Você não precisa caminhar sozinho.
-      </h3>
-      <div class="flex gap-4 justify-center md:justify-start">
-        <Button variant="primary">Agendar Consulta</Button>
-        <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
+  <div class="bg-mesh-gradient w-full">
+    <section class="md:p-0 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="space-y-6 text-center pl-16 md:text-left md:py-16">
+        <h1>
+          <span class="font-bold">Equilíbrio e a saúde emocional</span> começam por
+          uma escuta singular.
+        </h1>
+        <h3 class="max-w-xl text-brand-brown font-normal">
+          Você não precisa caminhar sozinho.
+        </h3>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <Button variant="primary">Agendar Consulta</Button>
+          <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
+        </div>
       </div>
-    </div>
-    <div class="bg-neutral-200 aspect-4/3 rounded-lg overflow-hidden shadow-sm">
-      <div
-        class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-      >
-        Placeholder Foto
+      <div class="bg-neutral-200 overflow-hidden md:h-dvh shadow-md">
+        <Image
+          src={ProfilePicOptionA}
+          alt="Fundo acolhedor do consultório"
+          loading="eager"
+        />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section
-    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Como eu abordo a psicoterapia.</h3>
-    <p class="max-w-2xl text-center">
-      Acredito que a psicoterapia é um espaço de acolhimento, onde cada
-      indivíduo é convidado a explorar suas emoções, pensamentos e experiências
-      de forma segura e sem julgamentos. Meu objetivo é criar um ambiente onde
-      você se sinta confortável para compartilhar suas preocupações e desafios,
-      permitindo que juntos possamos trabalhar em direção ao seu bem-estar
-      emocional e crescimento pessoal.
-    </p>
-  </section>
-
+    <section
+      class="py-10 grid grid-cols-1 items-center justify-items-center min-h-[50vh]"
+    >
+      <div class="space-y-4">
+        <h3 class="text-center">Como eu abordo a psicoterapia.</h3>
+        <p class="max-w-2xl text-center">
+          Acredito que a psicoterapia é um espaço de acolhimento, onde cada
+          indivíduo é convidado a explorar suas emoções, pensamentos e
+          experiências de forma segura e sem julgamentos. Meu objetivo é criar
+          um ambiente onde você se sinta confortável para compartilhar suas
+          preocupações e desafios, permitindo que juntos possamos trabalhar em
+          direção ao seu bem-estar emocional e crescimento pessoal.
+        </p>
+      </div>
+    </section>
+  </div>
   <section
     class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
   >
@@ -338,7 +340,7 @@ import BackgroundPhoto from "../assets/BackgroundPhoto.jpg";
     class="md:p-0 relative h-screen md:h-dvh w-full flex items-center justify-center overflow-hidden"
   >
     <Image
-      src={BackgroundPhoto}
+      src={Background}
       alt="Fundo acolhedor do consultório"
       class="absolute inset-0 w-full h-full object-cover -z-10 brightness-95"
       widths={[240, 540, 720, 1180, 1920]}

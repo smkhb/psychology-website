@@ -74,8 +74,8 @@
   .body-text {
     /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
     /* Nota: Texto de leitura precisa de limites estritos para não virar poeira no mobile ou gigante no desktop */
-    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
-    @apply font-libre text-neutral-700;
+    font-size: clamp(1rem, 0.5vw + 0.875rem, 1.25rem);
+    @apply font-libre font-medium text-neutral-700;
   }
   li {
     /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
