@@ -7,17 +7,18 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Background from "../assets/background.jpg";
 import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
+import servicesImage from "../assets/services-section.jpg";
 ---
 
 <Layout>
   <div class="bg-mesh-gradient w-full">
     <section class="md:p-0 grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="space-y-6 text-center pl-16 md:text-left md:py-16">
+      <div class="space-y-6 text-center py-8 md:text-left md:pl-16 md:py-16">
         <h1>
           <span class="font-bold">Equilíbrio e a saúde emocional</span> começam por
           uma escuta singular.
         </h1>
-        <h3 class="max-w-xl text-brand-brown font-normal">
+        <h3 class="text-brand-brown font-normal">
           Você não precisa caminhar sozinho.
         </h3>
         <div class="flex gap-4 justify-center md:justify-start">
@@ -25,7 +26,7 @@ import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
           <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
         </div>
       </div>
-      <div class="bg-neutral-200 overflow-hidden md:h-dvh shadow-md">
+      <div class="overflow-hidden md:h-dvh shadow-md">
         <Image
           src={ProfilePicOptionA}
           alt="Fundo acolhedor do consultório"
@@ -34,12 +35,10 @@ import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
       </div>
     </section>
 
-    <section
-      class="py-10 grid grid-cols-1 items-center justify-items-center min-h-[50vh]"
-    >
-      <div class="space-y-4">
-        <h3 class="text-center">Como eu abordo a psicoterapia.</h3>
-        <p class="max-w-2xl text-center">
+    <section class="section">
+      <div class="space-y-2 text-center max-w-3xl">
+        <h3>Como eu abordo a psicoterapia.</h3>
+        <p>
           Acredito que a psicoterapia é um espaço de acolhimento, onde cada
           indivíduo é convidado a explorar suas emoções, pensamentos e
           experiências de forma segura e sem julgamentos. Meu objetivo é criar
@@ -50,57 +49,58 @@ import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
       </div>
     </section>
   </div>
-  <section
-    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Fundamentos</h3>
-    <p class="max-w-2xl text-center">
-      O cuidado psicológico exige responsabilidade, ética e respeito pela
-      experiência de vida de cada pessoa.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Escuta responsável</h4>
+  <section class="bg-bg-warm section">
+    <div class="max-w-4xl flex flex-col items-center gap-4">
+      <div class="space-y-2 max-w-3xl text-center">
+        <h3>Fundamentos</h3>
         <p>
-          Presença atenta que respeita seu mundo emocional e sua experiência
-          únicos.
+          O cuidado psicológico exige responsabilidade, ética e respeito pela
+          experiência de vida de cada pessoa.
         </p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
       </div>
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Confidencialidade profissional</h4>
-        <p>
-          Sua história permanece protegida dentro dos limites da prática ética.
-        </p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
-      </div>
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Respeito pela singularidade</h4>
-        <p>
-          Não existem duas jornadas iguais. Seu processo se desenrola em seu
-          próprio ritmo.
-        </p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-75 mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Escuta responsável</h4>
+          <p>
+            Presença atenta que respeita seu mundo emocional e sua experiência
+            únicos.
+          </p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Confidencialidade profissional</h4>
+          <p>
+            Sua história permanece protegida dentro dos limites da prática
+            ética.
+          </p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Respeito pela singularidade</h4>
+          <p>
+            Não existem duas jornadas iguais. Seu processo se desenrola em seu
+            próprio ritmo.
+          </p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-brand-gray py-10 grid grid-cols-1 md:grid-cols-2 gap-12">
-    <div
-      class="bg-neutral-200 w-sm rounded-lg overflow-hidden shadow-sm justify-self-end"
-    >
-      <div
-        class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-      >
-        Placeholder Foto
-      </div>
-    </div>
+  <section class="bg-brand-gray py-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <Image
+        src={servicesImage}
+        alt="Fundo acolhedor do consultório"
+        loading="lazy"
+        class="object-cover rounded-xl shadow-md justify-self-center"
+        width={320}
+      />
     <div class="space-y-2">
       <h3>Serviços clínicos</h3>
       <p class="max-w-2xl">
