@@ -36,7 +36,7 @@ import servicesImage from "../assets/services-section.jpg";
     </section>
 
     <section class="section">
-      <div class="space-y-2 text-center max-w-3xl">
+      <div class="space-y-2 text-center max-w-4xl">
         <h3>Como eu abordo a psicoterapia.</h3>
         <p>
           Acredito que a psicoterapia é um espaço de acolhimento, onde cada
@@ -49,9 +49,10 @@ import servicesImage from "../assets/services-section.jpg";
       </div>
     </section>
   </div>
+
   <section class="bg-bg-warm section">
     <div class="max-w-4xl flex flex-col items-center gap-4">
-      <div class="space-y-2 max-w-3xl text-center">
+      <div class="space-y-2 max-w-4xl text-center">
         <h3>Fundamentos</h3>
         <p>
           O cuidado psicológico exige responsabilidade, ética e respeito pela
@@ -93,106 +94,113 @@ import servicesImage from "../assets/services-section.jpg";
     </div>
   </section>
 
-  <section class="bg-brand-gray py-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+  <section class="bg-brand-gray section">
+    <div class="max-w-4xl grid grid-cols-1 md:grid-cols-2">
       <Image
         src={servicesImage}
         alt="Fundo acolhedor do consultório"
         loading="lazy"
-        class="object-cover rounded-xl shadow-md justify-self-center"
+        class="object-cover rounded-xl shadow-md"
         width={320}
       />
-    <div class="space-y-2">
-      <h3>Serviços clínicos</h3>
-      <p class="max-w-2xl">
-        Cada serviço é personalizado para atender às suas necessidades
-        específicas.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <ul>
-          <li>Bipolaridade</li>
-          <li>Depressão</li>
-          <li>Ansiedade</li>
-          <li>Traumas</li>
-          <li>Crise matrimonial</li>
-        </ul>
-        <ul>
-          <li>Gerenciamento de estresse</li>
-          <li>Consultoria de Carreira</li>
-          <li>Terapia Familiar</li>
-          <li>Serviços de Emergência</li>
-        </ul>
-      </div>
-      <Button variant="secondary">Agendar Consulta</Button>
-    </div>
-  </section>
-
-  <section
-    class="bg-bg-warm py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Para quem é direcionado?</h3>
-    <p class="max-w-2xl text-center">
-      É recomendado que todos procurem aconselhamento no decorrer da vida mas é
-      especialmente recomendado se você encontrar em um desses momentos da vida.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Desejo compreender as emoções e os relacionamentos.</h4>
-        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-          <div
-            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-          >
-            Placeholder Foto
-          </div>
+      <div class="space-y-2">
+        <h3>Serviços clínicos</h3>
+        <p class="max-w-2xl">
+          Cada serviço é personalizado para atender às suas necessidades
+          específicas.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <ul>
+            <li>Bipolaridade</li>
+            <li>Depressão</li>
+            <li>Ansiedade</li>
+            <li>Traumas</li>
+            <li>Crise matrimonial</li>
+          </ul>
+          <ul>
+            <li>Gerenciamento de estresse</li>
+            <li>Consultoria de Carreira</li>
+            <li>Terapia Familiar</li>
+            <li>Serviços de Emergência</li>
+          </ul>
         </div>
-        <p>Buscando clareza sobre o que se move dentro de você.</p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
-      </div>
-
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Vivencia conflitos internos ou relacionais</h4>
-        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-          <div
-            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-          >
-            Placeholder Foto
-          </div>
-        </div>
-        <p>Enfrentando tensões que exigem atenção e cuidado.</p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
-      </div>
-
-      <div
-        class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
-      >
-        <h4>Em fases de transição ou crise da vida</h4>
-        <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-          <div
-            class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-          >
-            Placeholder Foto
-          </div>
-        </div>
-        <p>Precisar de apoio quando o chão cede sob seus pés.</p>
-        <Link variant="secondary" href="/sobre">Leia mais</Link>
+        <Button variant="secondary">Agendar Consulta</Button>
       </div>
     </div>
   </section>
 
-  <section
-    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Dê o primeiro passo</h3>
-    <p class="max-w-2xl text-center">
-      Buscar aconselhamento é um ato de responsabilidade para consigo mesmo e
-      para com aqueles que caminham ao seu lado.
-    </p>
-    <div class="flex gap-4 justify-center">
-      <Button variant="primary">Agendar Consulta</Button>
-      <Button variant="secondary">Contato</Button>
+  <section class="bg-bg-warm section">
+    <div class="max-w-6xl flex flex-col items-center gap-4">
+      <div class="space-y-2 text-center max-w-4xl">
+        <h3>Para quem é direcionado?</h3>
+        <p class="max-w-2xl text-center">
+          É recomendado que todos procurem aconselhamento no decorrer da vida
+          mas é especialmente recomendado se você encontrar em um desses
+          momentos da vida.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Desejo compreender as emoções e os relacionamentos.</h4>
+          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+            <div
+              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+            >
+              Placeholder Foto
+            </div>
+          </div>
+          <p>Buscando clareza sobre o que se move dentro de você.</p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Vivencia conflitos internos ou relacionais</h4>
+          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+            <div
+              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+            >
+              Placeholder Foto
+            </div>
+          </div>
+          <p>Enfrentando tensões que exigem atenção e cuidado.</p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+
+        <div
+          class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
+        >
+          <h4>Em fases de transição ou crise da vida</h4>
+          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
+            <div
+              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
+            >
+              Placeholder Foto
+            </div>
+          </div>
+          <p>Precisar de apoio quando o chão cede sob seus pés.</p>
+          <Link variant="secondary" href="/sobre">Leia mais</Link>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mesh-gradient section">
+    <div class="max-w-4xl flex flex-col items-center gap-4">
+      <div class="space-y-2 max-w-4xl text-center">
+        <h3>Dê o primeiro passo</h3>
+        <p class="max-w-2xl text-center">
+          Buscar aconselhamento é um ato de responsabilidade para consigo mesmo
+          e para com aqueles que caminham ao seu lado.
+        </p>
+      </div>
+      <div class="flex gap-4 justify-center">
+        <Button variant="primary">Agendar Consulta</Button>
+        <Button variant="secondary">Contato</Button>
+      </div>
     </div>
   </section>
 
