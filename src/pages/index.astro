@@ -26,10 +26,10 @@ import org02 from "../assets/org-section-02.jpg";
           <span class="font-bold">Equilíbrio e a saúde emocional</span> começam por
           uma escuta singular.
         </h1>
-        <h3 class="text-brand-brown font-normal">
-          Você não precisa caminhar sozinho.
-        </h3>
-        <div class="flex gap-4 justify-center md:justify-start">
+        <div class="gap-4">
+          <h3 class="text-brand-brown font-normal">
+            Você não precisa caminhar sozinho.
+          </h3>
           <Link variant="tertiary" href="/contato">Agendar Consulta</Link>
         </div>
       </div>
@@ -59,7 +59,7 @@ import org02 from "../assets/org-section-02.jpg";
 
   <section class="bg-bg-warm section">
     <div class="max-w-4xl flex flex-col items-center gap-4">
-      <div class="space-y-2 max-w-4xl text-center">
+      <div class="max-w-4xl text-center">
         <h3>Fundamentos</h3>
         <p>
           O cuidado psicológico exige responsabilidade, ética e respeito pela
@@ -174,7 +174,7 @@ import org02 from "../assets/org-section-02.jpg";
           <Image
             src={towho01}
             alt="Fundo acolhedor do consultório"
-            class="rounded-lg overflow-hidden shadow-sm h-48"
+            class="object-cover rounded-lg overflow-hidden shadow-sm h-48"
           />
           <p>Buscando clareza sobre o que se move dentro de você.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
@@ -187,7 +187,7 @@ import org02 from "../assets/org-section-02.jpg";
           <Image
             src={towho02}
             alt="Fundo acolhedor do consultório"
-            class="rounded-lg overflow-hidden shadow-sm h-48"
+            class="object-cover rounded-lg overflow-hidden shadow-sm h-48"
           />
           <p>Enfrentando tensões que exigem atenção e cuidado.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
@@ -200,7 +200,7 @@ import org02 from "../assets/org-section-02.jpg";
           <Image
             src={towho03}
             alt="Fundo acolhedor do consultório"
-            class="rounded-lg overflow-hidden shadow-sm h-48"
+            class="object-cover rounded-lg overflow-hidden shadow-sm h-48"
           />
           <p>Precisar de apoio quando o chão cede sob seus pés.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
@@ -245,7 +245,7 @@ import org02 from "../assets/org-section-02.jpg";
           <Image
             src={org01}
             alt="Fundo acolhedor do consultório"
-            class="rounded-lg overflow-hidden shadow-sm h-48"
+            class="object-cover rounded-lg overflow-hidden shadow-sm h-48"
           />
           <p>
             Fortaleça os relacionamentos e a comunicação no seu ambiente de
@@ -266,7 +266,7 @@ import org02 from "../assets/org-section-02.jpg";
           <Image
             src={org02}
             alt="Fundo acolhedor do consultório"
-            class="rounded-lg overflow-hidden shadow-sm h-48"
+            class="object-cover rounded-lg overflow-hidden shadow-sm h-48"
           />
           <p>
             Explore a maturidade relacional e os laços dentro de seus círculos
@@ -281,16 +281,17 @@ import org02 from "../assets/org-section-02.jpg";
     </div>
   </section>
 
-  <section
-    class="bg-brand-gray py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Um espaço para o seu autoconhecimento</h3>
-    <p class="max-w-2xl text-center">
-      Inscreva-se para receber reflexões mensais sobre saúde emocional,
-      autoconhecimento e o cuidado com a mente, enviadas com a mesma ética e
-      respeito do consultório.
-    </p>
-    <EmailInput />
+  <section class="bg-brand-gray section">
+    <div class="max-w-4xl flex flex-col items-center gap-4">
+      <div class="space-y-2 max-w-4xl text-center">
+        <h3>Receba novidades e conteúdos exclusivos</h3>
+        <p class="max-w-2xl text-center">
+          Inscreva-se para receber atualizações sobre nossos serviços, eventos e
+          recursos de bem-estar.
+        </p>
+      </div>
+      <EmailInput />
+    </div>
   </section>
 
   <section
@@ -354,12 +355,19 @@ import org02 from "../assets/org-section-02.jpg";
         </p>
       </Accordion>
     </div>
-    <h3>Ainda tem dúvidas?</h3>
-    <p class="max-w-2xl text-center">
-      Estamos aqui para ouvir e esclarecer qualquer dúvida que você tenha.
-    </p>
-    <div class="flex gap-4 justify-center">
-      <Button variant="primary">Contato</Button>
+  </section>
+
+  <section class="bg-brand-gray section">
+    <div class="max-w-4xl flex flex-col items-center gap-4">
+      <div class="space-y-2 text-center max-w-4xl">
+        <h3>Ainda tem dúvidas?</h3>
+        <p class="max-w-2xl text-center">
+          Estamos aqui para ouvir e esclarecer qualquer dúvida que você tenha.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <Button variant="primary">Contato</Button>
+      </div>
     </div>
   </section>
 
@@ -375,17 +383,19 @@ import org02 from "../assets/org-section-02.jpg";
     />
   </section>
 
-  <section
-    class="bg-mesh-gradient py-10 grid grid-cols-1 gap-4 items-center justify-items-center"
-  >
-    <h3>Que tal iniciar a sua jornada de cuidado?</h3>
-    <p class="max-w-2xl text-center">
-      O processo terapêutico é um investimento em você. Agende uma conversa
-      inicial para entendermos, juntos, como a psicoterapia pode auxiliar no seu
-      momento atual.
-    </p>
-    <div class="flex gap-4 justify-center">
-      <Button variant="primary">Agendar Consulta</Button>
+  <section class="bg-mesh-gradient section">
+    <div class="max-w-4xl flex flex-col items-center gap-4">
+      <div class="space-y-2 text-center max-w-4xl">
+        <h3>Pronto para começar?</h3>
+        <p class="max-w-2xl text-center">
+          Entre em contato para agendar sua primeira consulta e iniciar sua
+          jornada de autodescoberta e crescimento pessoal.
+        </p>
+      </div>
+      <div class="flex gap-4 justify-center">
+        <Button variant="primary">Agendar Consulta</Button>
+        <Button variant="secondary">Contato</Button>
+      </div>
     </div>
   </section>
 </Layout>
