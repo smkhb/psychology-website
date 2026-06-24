@@ -47,10 +47,10 @@
   }
 
   section {
-    @apply md:px-16 mx-auto;
+    @apply md:px-16 md:py-8 mx-auto;
   }
   .section {
-    @apply py-8 grid grid-cols-1 items-center justify-items-center min-h-[50vh];
+    @apply py-4 px-4 grid grid-cols-1 items-center justify-items-center min-h-[50vh];
   }
 
   h1 {
@@ -89,7 +89,11 @@
   li {
     /* Mobile: 16px (1rem) -> Desktop: 18px (1.125rem) */
     font-size: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
-    @apply font-baskervville text-neutral-700 list-disc list-inside;
+    @apply font-baskervville text-brand-brown-clicked list-inside;
+  }
+  .li::before {
+    content: "•";
+    @apply text-brand-terracota;
   }
 }
 

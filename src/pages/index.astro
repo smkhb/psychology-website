@@ -42,8 +42,8 @@ import org02 from "../assets/org-section-02.jpg";
       />
     </section>
 
-    <section class="section">
-      <div class="space-y-2 text-center max-w-4xl">
+    <section class="section p-4">
+      <div class="text-center max-w-4xl">
         <h3>Como eu abordo a psicoterapia.</h3>
         <p>
           Acredito que a psicoterapia é um espaço de acolhimento, onde cada
@@ -130,28 +130,47 @@ import org02 from "../assets/org-section-02.jpg";
         loading="lazy"
         class="rounded-xl shadow-md"
       />
-      <div class="space-y-2">
-        <h3>Serviços clínicos</h3>
-        <p class="max-w-2xl">
-          Cada serviço é personalizado para atender às suas necessidades
-          específicas.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="max-w-4xl space-y-2">
+        <div class="max-w-4xl">
+          <h3>Serviços clínicos</h3>
+          <p>
+            Cada serviço é personalizado para atender às suas necessidades
+            específicas.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 w-full">
           <ul>
-            <li>Bipolaridade</li>
-            <li>Depressão</li>
-            <li>Ansiedade</li>
-            <li>Traumas</li>
-            <li>Crise matrimonial</li>
-          </ul>
-          <ul>
-            <li>Gerenciamento de estresse</li>
-            <li>Consultoria de Carreira</li>
-            <li>Terapia Familiar</li>
-            <li>Serviços de Emergência</li>
+            <li
+              class="li border-b md:border-0 border-brand-brown-clicked py-2 md:py-0"
+              >
+              Bipolaridade e Depressão 
+            </li>
+            <li
+              class="li border-b md:border-0 border-brand-brown-clicked py-2 md:py-0"
+            >
+              Ansiedade e Estresse
+            </li>
+            <li
+              class="li border-b md:border-0 border-brand-brown-clicked py-2 md:py-0"
+            >
+              Traumas e Crises
+            </li>
+            <li
+              class="li border-b md:border-0 border-brand-brown-clicked py-2 md:py-0"
+            >
+              Terapia Familiar e Matrimonial
+            </li>
+            <li
+              class="li border-b md:border-0 border-brand-brown-clicked py-2 md:py-0"
+            >
+              Consultoria de Carreira
+            </li>
           </ul>
         </div>
-        <Button variant="secondary">Agendar Consulta</Button>
+        <Button variant="secondary" class="w-full md:w-auto"
+          >Agendar Consulta</Button
+        >
       </div>
     </div>
   </section>
