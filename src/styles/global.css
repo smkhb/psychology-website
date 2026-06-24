@@ -9,6 +9,9 @@
   --font-baskervville: "Baskervville", serif;
   --font-montserrat: "Montserrat", system-ui, sans-serif;
 
+  --clamp-h4: 1.25rem, 2vw + 0.75rem, 1.5rem;
+  --text-h3: clamp(var(--clamp-h4));
+
   --color-bg-warm: #f4eeec;
 
   --color-brand-gray: #fcfcfa;
@@ -71,7 +74,7 @@
   h4 {
     /* Mobile: 20px (1.25rem) -> Desktop: 24px (1.5rem) */
     font-size: clamp(1.25rem, 2vw + 0.75rem, 1.5rem);
-    @apply font-playfair font-semibold text-brand-terracota-clicked;
+    @apply font-playfair font-semibold text-brand-brown-clicked;
   }
 
   p,

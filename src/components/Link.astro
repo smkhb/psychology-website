@@ -1,7 +1,7 @@
 ---
 interface Props {
   href: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
   class?: string;
 }
 
@@ -10,9 +10,11 @@ const { href, variant = "primary", class: className, ...rest } = Astro.props;
 const baseStyles = "link font-montserrat font-medium text-base";
 
 const variantStyles = {
-  primary: "hover:bg-transparent hover:text-brand-brown focus:bg-transparent focus:text-brand-brown",
+  primary:
+    "hover:bg-transparent hover:text-brand-brown focus:bg-transparent focus:text-brand-brown",
   secondary:
-    "italic text-brand-green hover:text-brand-green-hover focus:bg-transparent",
+    "text-brand-green hover:text-brand-green-hover focus:bg-transparent",
+  tertiary: "text-brand-green-hover font-playfair font-semibold text-h3 italic",
 }[variant];
 ---
 
