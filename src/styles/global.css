@@ -65,13 +65,13 @@
   h3 {
     /* Mobile: 24px (1.5rem) -> Desktop: 32px (2rem) */
     font-size: clamp(1.5rem, 3vw + 0.75rem, 2rem);
-    @apply font-playfair font-semibold text-brand-terracota-hover;
+    @apply font-playfair font-semibold text-brand-brown-clicked;
   }
 
   h4 {
     /* Mobile: 20px (1.25rem) -> Desktop: 24px (1.5rem) */
     font-size: clamp(1.25rem, 2vw + 0.75rem, 1.5rem);
-    @apply font-playfair text-brand-brown-clicked leading-normal;
+    @apply font-playfair font-semibold text-brand-terracota-clicked;
   }
 
   p,

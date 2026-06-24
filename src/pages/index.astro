@@ -8,6 +8,14 @@ import { Image } from "astro:assets";
 import Background from "../assets/background.jpg";
 import ProfilePicOptionA from "../assets/profile-pic-optionA-resized.jpg";
 import servicesImage from "../assets/services-section.jpg";
+import icon1 from "../assets/icon-01.svg";
+import icon2 from "../assets/icon-02.svg";
+import icon3 from "../assets/icon-03.svg";
+import towho01 from "../assets/towho-section-01.jpg";
+import towho02 from "../assets/towho-section-02.jpg";
+import towho03 from "../assets/towho-section-03.jpg";
+import org01 from "../assets/org-section-01.jpg";
+import org02 from "../assets/org-section-02.jpg";
 ---
 
 <Layout>
@@ -26,13 +34,13 @@ import servicesImage from "../assets/services-section.jpg";
           <Button variant="secondary" href="/sobre">Conhecer Trajetória</Button>
         </div>
       </div>
-      <div class="overflow-hidden md:h-dvh shadow-md">
-        <Image
-          src={ProfilePicOptionA}
-          alt="Fundo acolhedor do consultório"
-          loading="eager"
-        />
-      </div>
+      <Image
+        src={ProfilePicOptionA}
+        alt="Fundo acolhedor do consultório"
+        loading="eager"
+        width={600}
+        class="shadow-md justify-self-end"
+      />
     </section>
 
     <section class="section">
@@ -63,6 +71,13 @@ import servicesImage from "../assets/services-section.jpg";
         <div
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-75 mx-auto text-center flex flex-col justify-between"
         >
+          <Image
+            src={icon1}
+            alt="Ícone de escuta responsável"
+            class="mx-auto mb-4"
+            width={48}
+            height={48}
+          />
           <h4>Escuta responsável</h4>
           <p>
             Presença atenta que respeita seu mundo emocional e sua experiência
@@ -73,6 +88,13 @@ import servicesImage from "../assets/services-section.jpg";
         <div
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
         >
+          <Image
+            src={icon2}
+            alt="Ícone de confidencialidade profissional"
+            class="mx-auto mb-4"
+            width={48}
+            height={48}
+          />
           <h4>Confidencialidade profissional</h4>
           <p>
             Sua história permanece protegida dentro dos limites da prática
@@ -83,6 +105,13 @@ import servicesImage from "../assets/services-section.jpg";
         <div
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-72 mx-auto text-center flex flex-col justify-between"
         >
+          <Image
+            src={icon3}
+            alt="Ícone de respeito pela singularidade"
+            class="mx-auto mb-4"
+            width={48}
+            height={48}
+          />
           <h4>Respeito pela singularidade</h4>
           <p>
             Não existem duas jornadas iguais. Seu processo se desenrola em seu
@@ -95,13 +124,12 @@ import servicesImage from "../assets/services-section.jpg";
   </section>
 
   <section class="bg-brand-gray section">
-    <div class="max-w-4xl grid grid-cols-1 md:grid-cols-2">
+    <div class="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4">
       <Image
         src={servicesImage}
         alt="Fundo acolhedor do consultório"
         loading="lazy"
-        class="object-cover rounded-xl shadow-md"
-        width={320}
+        class="rounded-xl shadow-md"
       />
       <div class="space-y-2">
         <h3>Serviços clínicos</h3>
@@ -144,13 +172,11 @@ import servicesImage from "../assets/services-section.jpg";
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
         >
           <h4>Desejo compreender as emoções e os relacionamentos.</h4>
-          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-            <div
-              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-            >
-              Placeholder Foto
-            </div>
-          </div>
+          <Image
+            src={towho01}
+            alt="Fundo acolhedor do consultório"
+            class="rounded-lg overflow-hidden shadow-sm h-48"
+          />
           <p>Buscando clareza sobre o que se move dentro de você.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
         </div>
@@ -159,13 +185,11 @@ import servicesImage from "../assets/services-section.jpg";
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
         >
           <h4>Vivencia conflitos internos ou relacionais</h4>
-          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-            <div
-              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-            >
-              Placeholder Foto
-            </div>
-          </div>
+          <Image
+            src={towho02}
+            alt="Fundo acolhedor do consultório"
+            class="rounded-lg overflow-hidden shadow-sm h-48"
+          />
           <p>Enfrentando tensões que exigem atenção e cuidado.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
         </div>
@@ -174,13 +198,11 @@ import servicesImage from "../assets/services-section.jpg";
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between"
         >
           <h4>Em fases de transição ou crise da vida</h4>
-          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-            <div
-              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-            >
-              Placeholder Foto
-            </div>
-          </div>
+          <Image
+            src={towho03}
+            alt="Fundo acolhedor do consultório"
+            class="rounded-lg overflow-hidden shadow-sm h-48"
+          />
           <p>Precisar de apoio quando o chão cede sob seus pés.</p>
           <Link variant="secondary" href="/sobre">Leia mais</Link>
         </div>
@@ -218,16 +240,14 @@ import servicesImage from "../assets/services-section.jpg";
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between gap-2"
         >
           <p class="font-montserrat font-bold text-brand-terracota text-sm">
-            Organizacionais
+            Organizações
           </p>
           <h4>Palestras institucionais para a conscientização emocional</h4>
-          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-            <div
-              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-            >
-              Placeholder Foto
-            </div>
-          </div>
+          <Image
+            src={org01}
+            alt="Fundo acolhedor do consultório"
+            class="rounded-lg overflow-hidden shadow-sm h-48"
+          />
           <p>
             Fortaleça os relacionamentos e a comunicação no seu ambiente de
             trabalho.
@@ -241,19 +261,17 @@ import servicesImage from "../assets/services-section.jpg";
           class="bg-gray-100 p-6 rounded-xl shadow-sm max-w-md mx-auto text-center flex flex-col justify-between gap-2"
         >
           <p class="font-montserrat font-bold text-brand-terracota text-sm">
-            Organizacionais
+            Comunidades
           </p>
-          <h4>Palestras institucionais para a conscientização emocional</h4>
-          <div class="bg-neutral-200 rounded-lg overflow-hidden shadow-sm h-48">
-            <div
-              class="w-full h-full bg-brand-brown/10 flex items-center justify-between p-8 text-neutral-400"
-            >
-              Placeholder Foto
-            </div>
-          </div>
+          <h4>Reuniões em grupo e oficinas para famílias</h4>
+          <Image
+            src={org02}
+            alt="Fundo acolhedor do consultório"
+            class="rounded-lg overflow-hidden shadow-sm h-48"
+          />
           <p>
-            Fortaleça os relacionamentos e a comunicação no seu ambiente de
-            trabalho.
+            Explore a maturidade relacional e os laços dentro de seus círculos
+            mais próximos.
           </p>
           <div class="flex gap-4 justify-center items-center">
             <Button variant="primary">Solicitar</Button>
